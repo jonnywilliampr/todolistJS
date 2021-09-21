@@ -18,7 +18,7 @@ function renderTodo(){
     }
     */
     listElement.innerHTML = '';
-
+    
     arr.forEach((item, index) => {
         var liElement = document.createElement('li');
         var liText = document.createTextNode(item);
@@ -51,8 +51,8 @@ function addItem(){
     
 }
 
-function deleteItem(pos){
-    arr.splice(pos, 1);
+function deleteItem(position){
+    arr.splice(position, 1);
 
     renderTodo();
 }
